@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrad"
+    android:orientation="vertical"
+    tools:context="com.phone.abhayrastogi.phone.CategroyActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/fredoka_one"
+
+        android:text="Chose Categroy"
+        android:textColor="#ffffff"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        tools:fontFamily="sans-serif" />
+
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/ele"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ele" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cook"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cook" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/plumber"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/plumber" />
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/beauty"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+
+
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp" android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/beauty" />
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/tutor"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp" android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tutor" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/repair"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp" android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/repair" />
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/health"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+
+
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp" android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/health" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/driver"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp" android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driver" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/other"
+                    android:layout_width="220dp"
+                    android:layout_height="270dp"
+                    android:layout_margin="1dp"
+                    app:cardElevation="10dp"
+
+                    app:cardCornerRadius="50dp" android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/other" />
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

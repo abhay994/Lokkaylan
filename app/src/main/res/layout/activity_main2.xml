@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.phone.abhayrastogi.phone.Main2Activity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/square">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:id="@+id/progressbar"
+            />
+
+        <ImageView
+
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/value" />
+
+
+
+        <TextView
+
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone_title_text"
+            android:visibility="gone"
+            android:layout_alignBaseline="@+id/detail"
+            android:layout_alignBottom="@+id/detail"
+            android:layout_toLeftOf="@+id/icon"
+            android:layout_toStartOf="@+id/icon" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/status"
+            android:text="signed_out"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail"
+            android:visibility="gone"
+
+            android:layout_marginRight="78dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginTop="52dp" />
+
+
+        <EditText
+            android:id="@+id/field_phone_number"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:background="#90cecece"
+            android:hint="        Phone Number  "
+            android:inputType="phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#545454"
+            android:fontFamily="@font/fredoka_one"
+            android:textColorHint="#545454"
+            android:textSize="18dp" />
+
+
+        <Button
+            android:fontFamily="@font/fredoka_one"
+            android:layout_margin="6dp"
+            android:id="@+id/button_start_verification"
+            android:layout_gravity="center"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/field_phone_number"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background_adult"
+
+            android:text="Next"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+
+        <EditText
+            android:id="@+id/field_verification_code"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:background="#90cecece"
+            android:hint="        Enter OTP "
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="#545454"
+            android:textColorHint="#545454"
+            android:textSize="12dp"
+            android:visibility="gone" />
+
+
+        <Button
+
+            android:id="@+id/button_verify_phone"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+
+            android:background="@drawable/background_adult"
+
+            android:text="VERIFY"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_margin="6dp"
+            android:visibility="gone" />
+
+
+
+        <Button
+
+
+            android:id="@+id/button_resend"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_margin="6dp"
+
+            android:background="@drawable/background_adult"
+
+            android:text="RESEND"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp"
+            android:text="sign_out"
+            android:layout_margin="6dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/button_verify_phone"
+            android:layout_alignStart="@+id/button_verify_phone" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

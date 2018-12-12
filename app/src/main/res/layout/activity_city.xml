@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.phone.abhayrastogi.phone.CityActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/saveDatacard"
+        android:layout_marginTop="10dp"
+
+        app:cardCornerRadius="6dp"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+
+                app:cardElevation="3dp"
+                app:cardCornerRadius="3dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:src="@drawable/city"
+                    android:scaleType="fitXY"/>
+            </android.support.v7.widget.CardView>
+
+    <EditText
+        android:id="@+id/field_pin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/fredoka_one"
+        android:layout_gravity="center"
+        android:background="#90cecece"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:hint="        Enter City pincode  "
+        android:inputType="phone"
+        android:textColor="#545454"
+        android:textColorHint="#545454"
+
+        android:textSize="12dp"
+        android:layout_margin="10dp"
+
+        />
+            <ProgressBar
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:id="@+id/pcity"/>
+    <TextView
+        android:id="@+id/field_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+
+        android:textColor="#545454"
+        android:textColorHint="#545454"
+        android:textSize="30sp"
+        android:layout_margin="5dp"
+
+        />
+
+
+
+            <Button
+                android:fontFamily="@font/fredoka_one"
+        android:layout_marginTop="7dp"
+        android:id="@+id/savecity"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:background="@drawable/background_adult"
+        android:text="check pincode"
+        android:textColor="#ffffff" />
+
+
+            <Button
+                android:fontFamily="@font/fredoka_one"
+                android:layout_marginTop="7dp"
+                android:id="@+id/next"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:background="@drawable/background_adult"
+                android:text="Next"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
